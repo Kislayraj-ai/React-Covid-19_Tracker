@@ -1,0 +1,102 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(229, 246, 248);
+  position: relative;
+}
+
+/*
+===========
+===========
+*/
+
+.header {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(components/covid.jpeg) center/cover;
+}
+
+.custom-toggler.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navlinks {
+  font-size: 1.5rem;
+  color: #ffff;
+  text-anchor: end;
+  text-decoration: none;
+  margin-left: 100px;
+  position: relative;
+  border: 2px solid transparent;
+}
+.navlinks:hover {
+  color: rgb(245, 244, 244);
+}
+
+.activeNav {
+  padding: 0.2rem 0.6rem;
+  border-left: 3px solid #f19925;
+}
+
+.card {
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: -1px -4px 5px rgb(240, 239, 239), 1px 4px 5px rgb(226, 221, 221);
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 70rem;
+  }
+}
+
+.noMatches {
+  text-align: center;
+  padding: 2rem;
+}
+
+.not-found {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background: rgb(83, 83, 83);
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+.not-found img {
+  position: relative;
+  height: 400px;
+}
+
+.not-found button {
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid rgb(1, 235, 118);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  margin-top: 100px;
+  outline: none;
+}
+.not-found button:hover {
+  background: rgb(1, 235, 118);
+  color: #444;
+  border: 2px solid rgb(1, 235, 118);
+}
